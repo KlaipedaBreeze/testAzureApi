@@ -1,11 +1,12 @@
 from fastapi import FastAPI
+import uvicorn
 
-app = FastAPI(__name__)
+app = FastAPI()
 
 
 @app.get("/")
 def home():
-    print("Hello")
+    return "Hello World"
 
 
 
